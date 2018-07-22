@@ -24,7 +24,7 @@ img {
 	width: 100%;
 }
 
-.imgCredit {
+.imgCredit, .numClicks, p {
 	font-family: 'Roboto Condensed';
 	font-size: 80%
 }

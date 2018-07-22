@@ -11,9 +11,16 @@ h1 {
 
 main {
 	text-align: center;
-	width: 60%;
+	/*width: 60%; project requires 2 cats now*/
 	margin: 0 auto;
 	border: 1px solid #445566;
+}
+
+#colOne, #colTwo{
+	width: 45%;
+	margin: 0 2.5% 0 2.5%;
+	display: inline-block;
+	float: left;
 }
 
 figure {
@@ -24,7 +31,7 @@ img {
 	width: 100%;
 }
 
-.imgCredit, .numClicks, p {
+.imgCredit, .numClicks, .numClicksTwo, p {
 	font-family: 'Roboto Condensed';
 	font-size: 80%
 }

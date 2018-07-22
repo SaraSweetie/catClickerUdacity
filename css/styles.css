@@ -1,0 +1,44 @@
+/*font-family: 'Overlock', cursive;
+font-family: 'Roboto Condensed', sans-serif;*/
+* {margin:0; padding:0; border:0; text-size:100%;}
+
+h1 {
+	text-align: center;
+	font-family: 'Overlock', cursive;
+	font-size: 350%;
+	margin: 2% 0;
+}
+
+main {
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+	border: 1px solid #445566;
+}
+
+figure {
+	border: 2px solid red;
+}
+
+img {
+	width: 100%;
+}
+
+.imgCredit {
+	font-family: 'Roboto Condensed';
+	font-size: 80%
+}
+
+figcaption {
+	font-family: 'Roboto Condensed';
+	font-size: 120%
+}
+
+button {
+	width: 100%;
+	padding: 4%;
+	margin: 5% 0;
+	background-color: #eeff88;
+	font-family: 'Roboto Condensed';
+	font-size: 140%;
+}

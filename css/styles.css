@@ -9,6 +9,13 @@ h1 {
 	margin: 2% 0;
 }
 
+h2 {
+	text-align: center;
+	font-family: 'Overlock', cursive;
+	font-size: 120%;
+	margin: 2% 0;
+}
+
 main {
 	text-align: center;
 	margin: 0 auto;
@@ -32,7 +39,7 @@ img {
 	width: 100%;
 }
 
-.imgCredit, .numClicks, p {
+.imgCredit, .numClicks, p, ul, .name {
 	font-family: 'Roboto Condensed';
 	font-size: 80%
 }

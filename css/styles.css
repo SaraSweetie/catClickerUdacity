@@ -2,18 +2,22 @@
 font-family: 'Roboto Condensed', sans-serif;*/
 * {margin:0; padding:0; border:0; text-size:100%;}
 
+body {background-color: #e8eaf6;}
+
 h1 {
 	text-align: center;
 	font-family: 'Overlock', cursive;
 	font-size: 350%;
 	margin: 2% 0;
+	color:#102a45;
 }
 
 h2 {
-	text-align: center;
+	text-align: left;
 	font-family: 'Overlock', cursive;
-	font-size: 120%;
+	font-size: 150%;
 	margin: 2% 0;
+	color: #FFFFFF;
 }
 
 main {
@@ -23,25 +27,34 @@ main {
 
 #colOne {
 	width: 65%;
-	margin: 0 2.5% 0 2.5%;
+	margin: 0 2.5%;
 	display: inline-block;
 	float: left;
 }
 
 #colTwo{
-	width: 25%;
-	margin: 0 2.5% 0 2.5%;
+	width: 19.5%;
+	margin: 2% 2.5% 0 0%;
+	padding: 4%;
 	display: inline-block;
 	float: right;
+	background-color: #41669d;
 }
 
 img {
 	width: 100%;
 }
 
-.imgCredit, .numClicks, p, ul, .name {
+p.cat {
+	font-family: 'Roboto Condensed';
+	font-size: 120%;
+	text-align:left;
+}
+
+.imgCredit, .numClicks, p {
 	font-family: 'Roboto Condensed';
 	font-size: 80%
+	color:#102a45;
 }
 
 figcaption {
@@ -49,11 +62,16 @@ figcaption {
 	font-size: 120%
 }
 
+#button {
+	background-color: #41669d;
+	color: #ffffff;
+	}
+
 button {
 	width: 100%;
 	padding: 4%;
 	margin: 5% 0;
-	background-color: #eeff88;
+	background-color: #e1c7d9;
 	font-family: 'Roboto Condensed';
 	font-size: 140%;
 }

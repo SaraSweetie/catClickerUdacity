@@ -1,10 +1,11 @@
-const button = document.getElementById('button');
+const clickCountButton = document.getElementById('clickCountButton');
 const clicks = document.querySelector('.numClicks');
 let i = 0;
 let catName = document.querySelector('.name');
 
 
-button.addEventListener('click', function(){ 
+
+clickCountButton.addEventListener('click', function(){ 
 	i ++;
 	clicks.innerHTML = `${i}`;
 }, false);
@@ -22,9 +23,20 @@ let catsList = [
 	{ name: 'Fat Cat', src:'https://cdn.pixabay.com/photo/2016/04/25/10/57/cat-1351612_1280.jpg', clickCount:i }
 ];
 
-//push cats names to an ul in the HTML
+//push cats names to a buttin in the HTML
 
-//<a><li class="name">Luna</li></a>
+for (cats in catsList) {
+	const button = document.createElement('button');
+	const catButtons = document.getElementById('catButtons');
+	
+	for (var j = 0; j <= catsList.length; j++) {
+		catButtons.innerHTML = `<button id="cat1">${catsList[j].name}</button>`;
+		console.log(catsList[j].name);
+		//button.textContent = catsList[j].name;
+		//catButtons.appendChild(button); // all names from catsList are printing to console but only one button is being made
+	}
+	break;
+}
 
 //make cat's names links to click and swap the image out
 const cat1 = document.getElementById('cat1');

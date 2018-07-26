@@ -16,11 +16,11 @@ clickCountButton.addEventListener('click', function(){
 
 //define cats in an object with their image url
 let catsList = [
-	{ name: 'Luna', src:'https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_1280.jpg', clickCount:i },
-	{ name: 'Jynx', src:'https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg', clickCount:i },
-	{ name: 'Tabby', src:'https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg', clickCount:i },
-	{ name: 'Smudge', src:'https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg', clickCount:i },
-	{ name: 'Fat Cat', src:'https://cdn.pixabay.com/photo/2016/04/25/10/57/cat-1351612_1280.jpg', clickCount:i }
+	{ catName: 'Luna', src:'https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_1280.jpg', clickCount:i },
+	{ catName: 'Jynx', src:'https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg', clickCount:i },
+	{ catName: 'Tabby', src:'https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg', clickCount:i },
+	{ catName: 'Smudge', src:'https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg', clickCount:i },
+	{ catName: 'Fat Cat', src:'https://cdn.pixabay.com/photo/2016/04/25/10/57/cat-1351612_1280.jpg', clickCount:i }
 ];
 
 //push cats names to a buttin in the HTML
@@ -30,8 +30,8 @@ for (cats in catsList) {
 	const catButtons = document.getElementById('catButtons');
 	
 	for (var j = 0; j <= catsList.length; j++) {
-		catButtons.innerHTML = `<button id="cat1">${catsList[j].name}</button>`;
-		console.log(catsList[j].name);
+		catButtons.innerHTML = `<button id="cat1">${catsList[j].catName}</button>`;
+		console.log(catsList[j].catName);
 		//button.textContent = catsList[j].name;
 		//catButtons.appendChild(button); // all names from catsList are printing to console but only one button is being made
 	}

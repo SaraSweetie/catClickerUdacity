@@ -24,8 +24,6 @@ clickCountButton.addEventListener('click', function(){
 	}
 }, false);
 
-//displayName.innerHTML = `${catsList[i]}`;
-
 //define cats in an object with their image url
 let catsList = [
 	{ catName: 'Luna', src:'https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_1280.jpg', clickCount:0 },
@@ -63,28 +61,29 @@ const imageSrc = document.getElementById('catImage');
 cat1.addEventListener('click', function(){ 
 	imageSrc.src="https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_1280.jpg";
 	clicks.innerHTML = `${catsList[0].clickCount}`;
+	displayName.innerHTML = `${catsList[0].catName}`;
 }, true);
 
 cat2.addEventListener('click', function(){ 
 	imageSrc.src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg";
 	clicks.innerHTML = `${catsList[1].clickCount}`;
+	displayName.innerHTML = `${catsList[1].catName}`;
 }, true);
 
 cat3.addEventListener('click', function(){ 
 	imageSrc.src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg";
 	clicks.innerHTML = `${catsList[2].clickCount}`;
+	displayName.innerHTML = `${catsList[2].catName}`;
 }, true);
 
 cat4.addEventListener('click', function(){ 
 	imageSrc.src="https://cdn.pixabay.com/photo/2018/04/27/08/59/maine-coon-3354072_960_720.jpg";
 	clicks.innerHTML = `${catsList[3].clickCount}`;
+	displayName.innerHTML = `${catsList[3].catName}`;
 }, true);
 
 cat5.addEventListener('click', function(){ 
 	imageSrc.src="https://cdn.pixabay.com/photo/2016/04/25/10/57/cat-1351612_1280.jpg";
 	clicks.innerHTML = `${catsList[4].clickCount}`;
+	displayName.innerHTML = `${catsList[4].catName}`;
 }, true);
-
-//count the number of button clicks
-
-//make sure that the number of clicks restart when a new image is loaded

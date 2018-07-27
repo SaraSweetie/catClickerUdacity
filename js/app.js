@@ -12,18 +12,16 @@ clickCountButton.addEventListener('click', function(){
 
 //displayName.innerHTML = `${catsList[i]}`;
 
-//To Do:
-
 //define cats in an object with their image url
 let catsList = [
 	{ catName: 'Luna', src:'https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_1280.jpg', clickCount:i },
 	{ catName: 'Jynx', src:'https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg', clickCount:i },
 	{ catName: 'Tabby', src:'https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg', clickCount:i },
-	{ catName: 'Smudge', src:'https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg', clickCount:i },
+	{ catName: 'Smudge', src:'https://cdn.pixabay.com/photo/2018/04/27/08/59/maine-coon-3354072_960_720.jpg', clickCount:i },
 	{ catName: 'Fat Cat', src:'https://cdn.pixabay.com/photo/2016/04/25/10/57/cat-1351612_1280.jpg', clickCount:i }
 ];
 
-//push cats names to a button in the HTML
+//push cats names (from catsList array) to an HTML button
 const catButtons = document.getElementById('catButtons');
 let j = 0;
 
@@ -42,6 +40,11 @@ const cat5 = document.getElementById('cat5');
 
 const imageSrc = document.getElementById('catImage');
 
+    /*let getImage = document.getElementById(cat${j+1});
+    console.log(getImage);
+    getImage.addEventListener('click', function(){ 
+		imageSrc.src=`${catsList[cat].src}`;
+	}, true);*/
 
 cat1.addEventListener('click', function(){ 
 	imageSrc.src="https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_1280.jpg";
@@ -49,6 +52,18 @@ cat1.addEventListener('click', function(){
 
 cat2.addEventListener('click', function(){ 
 	imageSrc.src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg";
+}, true);
+
+cat3.addEventListener('click', function(){ 
+	imageSrc.src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_1280.jpg";
+}, true);
+
+cat4.addEventListener('click', function(){ 
+	imageSrc.src="https://cdn.pixabay.com/photo/2018/04/27/08/59/maine-coon-3354072_960_720.jpg";
+}, true);
+
+cat5.addEventListener('click', function(){ 
+	imageSrc.src="https://cdn.pixabay.com/photo/2016/04/25/10/57/cat-1351612_1280.jpg";
 }, true);
 
 //count the number of button clicks

@@ -58,12 +58,6 @@ const cat4 = document.getElementById('cat4');
 const cat5 = document.getElementById('cat5');
 const imageSrc = document.getElementById('catImage');
 
-    /*let getImage = document.getElementById(cat${j+1});
-    console.log(getImage);
-    getImage.addEventListener('click', function(){ 
-		imageSrc.src=`${catsList[cat].src}`;
-	}, true);*/
-
 cat1.addEventListener('click', function(){ 
 	imageSrc.src="https://cdn.pixabay.com/photo/2018/07/13/10/20/cat-3535404_1280.jpg";
 	clicks.innerHTML = `${catsList[0].clickCount}`;

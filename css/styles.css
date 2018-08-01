@@ -35,10 +35,15 @@ main {
 #colTwo{
 	width: 19.5%;
 	margin: 2% 2.5% 0 0%;
-	padding: 4%;
+	padding: 2% 4%;
 	display: inline-block;
 	float: right;
 	background-color: #41669d;
+}
+
+#colTwo p {
+	color: #FFFFFF;
+	text-align: right;
 }
 
 img {
@@ -48,7 +53,11 @@ img {
 p.cat {
 	font-family: 'Roboto Condensed';
 	font-size: 120%;
-	text-align:left;
+	text-align:center;
+	width: 100%;
+	padding: 2% 0;
+	background-color: #840f59;
+	color: #e8eaf6;
 }
 
 .imgCredit, .numClicks, p {
@@ -60,12 +69,15 @@ p.cat {
 figcaption {
 	font-family: 'Roboto Condensed';
 	font-size: 120%
+	color:#102a45;
+	text-align: left;
+	font-style: italic;
 }
 
 #button {
 	background-color: #41669d;
 	color: #ffffff;
-	}
+}
 
 button {
 	width: 100%;
